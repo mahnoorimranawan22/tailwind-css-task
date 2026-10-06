@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexcent Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            green: '#4CAF4F',
+                            black: '#263238',
+                            darkgrey: '#4D4D4D',
+                            grey: '#717171',
+                            lightgrey: '#89939E',
+                            greyblue: '#ABBED1',
+                            silver: '#F5F7FA',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            },
+            plugins: [],
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+    </style>
+</head>
+
+<body class="font-sans antialiased text-brand-darkgrey bg-white">
+
+    <!-- Navbar -->
+    <nav class="w-full bg-white shadow-sm fixed top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="flex items-center gap-2">
+                        <img class="h-6 w-auto" src="images/Logo.png" alt="Nexcent Logo">
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#"
+                        class="text-brand-darkgrey font-medium hover:text-brand-green transition-colors">Home</a>
+                    <a href="#" class="text-brand-darkgrey hover:text-brand-green transition-colors">Features</a>
+                    <a href="#" class="text-brand-darkgrey hover:text-brand-green transition-colors">Community</a>
+                    <a href="#" class="text-brand-darkgrey hover:text-brand-green transition-colors">Blog</a>
+                    <a href="#" class="text-brand-darkgrey hover:text-brand-green transition-colors">Pricing</a>
+                    <a href="#"
+                        class="bg-brand-green text-white px-5 py-2.5 rounded hover:bg-green-600 transition-colors flex items-center gap-2 font-medium">
+                        Register Now <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="flex md:hidden items-center">
+                    <button type="button" class="text-brand-darkgrey hover:text-brand-green focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Wrapper to offset fixed navbar -->
+    <main class="pt-20">
+
+        <!-- Hero Section -->
+        <section class="bg-brand-silver">
+            <div
+                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 flex flex-col md:flex-row items-center justify-between">
+                <!-- Text Content -->
+                <div class="w-full md:w-1/2 md:pr-10 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-brand-darkgrey leading-tight mb-4">
+                        Lessons and insights <br>
+                        <span class="text-brand-green">from 8 years</span>
+                    </h1>
+                    <p class="text-brand-grey text-base md:text-lg mb-8">
+                        Where to grow your business as a photographer: site or social media?
+                    </p>
+                    <a href="#"
+                        class="inline-block bg-brand-green text-white px-7 py-3.5 rounded font-medium hover:bg-green-600 transition-colors">
+                        Register
+                    </a>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+                    <img src="images/Illustration.png" alt="Hero Illustration"
+                        class="w-full max-w-sm md:max-w-md lg:max-w-lg object-contain">
+                </div>
+            </div>
+
+            <!-- Pagination Dots (Visual only) -->
+            <div class="flex justify-center pb-8 gap-2">
+                <div class="w-2.5 h-2.5 rounded-full bg-brand-green"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-green-200"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-green-200"></div>
+            </div>
+        </section>
+
+        <!-- Clients Section -->
+        <section class="py-12 md:py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-semibold text-brand-darkgrey mb-2">Our Clients</h2>
+                <p class="text-brand-grey mb-10">We have been working with some Fortune 500+ clients</p>
+                <div class="flex flex-wrap justify-between items-center gap-6">
+                    <img src="images/Logo (1).png" alt="Client Logo" class="h-10 object-contain">
+                    <img src="images/Logo-1.png" alt="Client Logo" class="h-10 object-contain">
+                    <img src="images/Logo-2.png" alt="Client Logo" class="h-10 object-contain">
+                    <img src="images/Logo-3.png" alt="Client Logo" class="h-10 object-contain">
+                    <img src="images/Logo-4.png" alt="Client Logo" class="h-10 object-contain">
+                    <img src="images/Logo-5.png" alt="Client Logo" class="h-10 object-contain">
+                    <img src="images/Logo-3.png" alt="Client Logo" class="h-10 object-contain">
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section class="py-12 md:py-16 bg-white text-center">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-semibold text-brand-darkgrey max-w-lg mx-auto mb-2 leading-snug">
+                    Manage your entire community <br> in a single system
+                </h2>
+                <p class="text-brand-grey mb-12">Who is Nextcent suitable for?</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="bg-white rounded-lg px-6 py-8 flex flex-col items-center">
+                        <img src="images/Icon.png" alt="Icon" class="h-14 mb-4">
+                        <h3 class="text-2xl font-bold text-brand-darkgrey mb-3 leading-tight">Membership <br>
+                            Organisations</h3>
+                        <p class="text-brand-grey text-sm">
+                            Our membership management software provides full automation of membership renewals and
+                            payments
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-lg px-6 py-8 flex flex-col items-center">
+                        <img src="images/Icon (1).png" alt="Icon" class="h-14 mb-4">
+                        <h3 class="text-2xl font-bold text-brand-darkgrey mb-3 leading-tight">National <br> Associations
+                        </h3>
+                        <p class="text-brand-grey text-sm">
+                            Our membership management software provides full automation of membership renewals and
+                            payments
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-lg px-6 py-8 flex flex-col items-center">
+                        <img src="images/Icon (2).png" alt="Icon" class="h-14 mb-4">
+                        <h3 class="text-2xl font-bold text-brand-darkgrey mb-3 leading-tight">Clubs And <br> Groups</h3>
+                        <p class="text-brand-grey text-sm">
+                            Our membership management software provides full automation of membership renewals and
+                            payments
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Section 1 (Pixelgrade) -->
+        <section class="py-16 md:py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-10 md:gap-20">
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <img src="images/pana.png" alt="Feature Image"
+                        class="w-full max-w-sm md:max-w-md lg:max-w-lg object-contain">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-semibold text-brand-darkgrey mb-4 leading-snug">
+                        The unseen of spending three years at Pixelgrade
+                    </h2>
+                    <p class="text-brand-grey mb-8 text-sm md:text-base leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan
+                        quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis
+                        tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar,
+                        aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.
+                    </p>
+                    <a href="#"
+                        class="inline-block bg-brand-green text-white px-8 py-3 rounded font-medium hover:bg-green-600 transition-colors">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="py-16 bg-brand-silver">
+            <div
+                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-10">
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-semibold text-brand-darkgrey mb-2 leading-snug">
+                        Helping a local <br> <span class="text-brand-green">business reinvent itself</span>
+                    </h2>
+                    <p class="text-brand-darkgrey text-sm md:text-base">We reached here with our hard work and
+                        dedication</p>
+                </div>
+                <div class="w-full md:w-1/2 grid grid-cols-2 gap-y-10 gap-x-8">
+                    <div class="flex items-center gap-4">
+                        <img src="images/Icon (3).png" alt="Icon" class="h-10">
+                        <div>
+                            <h4 class="text-2xl md:text-3xl font-bold text-brand-darkgrey">2,245,341</h4>
+                            <p class="text-brand-grey text-sm">Members</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="images/Icon (4).png" alt="Icon" class="h-10">
+                        <div>
+                            <h4 class="text-2xl md:text-3xl font-bold text-brand-darkgrey">46,328</h4>
+                            <p class="text-brand-grey text-sm">Clubs</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="images/Icon (5).png" alt="Icon" class="h-10">
+                        <div>
+                            <h4 class="text-2xl md:text-3xl font-bold text-brand-darkgrey">828,867</h4>
+                            <p class="text-brand-grey text-sm">Event Bookings</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="images/Icon (6).png" alt="Icon" class="h-10">
+                        <div>
+                            <h4 class="text-2xl md:text-3xl font-bold text-brand-darkgrey">1,928,436</h4>
+                            <p class="text-brand-grey text-sm">Payments</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Section 2 -->
+        <section class="py-16 md:py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-10 md:gap-20">
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <img src="images/pana.png" alt="Mobile Site Footer Design"
+                        class="w-full max-w-sm md:max-w-md lg:max-w-lg object-contain">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-semibold text-brand-darkgrey mb-4 leading-snug">
+                        How to design your site footer like we did
+                    </h2>
+                    <p class="text-brand-grey mb-8 text-sm md:text-base leading-relaxed">
+                        Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie,
+                        massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero dictum
+                        mollis.
+                    </p>
+                    <a href="#"
+                        class="inline-block bg-brand-green text-white px-8 py-3 rounded font-medium hover:bg-green-600 transition-colors">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer/Testimonial Section -->
+        <section class="py-16 bg-brand-silver">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-10 lg:gap-16">
+                <div class="w-full md:w-1/3 flex justify-center">
+                    <img src="images/image 9.png" alt="Tesla Logo"
+                        class="w-full max-w-sm rounded-lg object-cover shadow-sm bg-white p-4">
+                </div>
+                <div class="w-full md:w-2/3">
+                    <p class="text-brand-grey mb-6 leading-relaxed font-medium">
+                        Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus
+                        tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in,
+                        gravida enim. Nullam et est hendrerit, facilisis enim id, iaculis erat.
+                    </p>
+                    <h4 class="text-xl font-semibold text-brand-green mb-1">Tim Smith</h4>
+                    <p class="text-brand-lightgrey text-sm mb-5">British Dragon Boat Racing Association</p>
+
+                    <div class="flex flex-wrap sm:flex-nowrap items-center gap-6 mt-2">
+                        <img src="images/Logo (1).png" alt="Logo" class="h-10 w-auto object-contain shrink-0">
+                        <img src="images/Logo-1.png" alt="Logo" class="h-6 w-auto object-contain shrink-0">
+                        <img src="images/Logo-2.png" alt="Logo" class="h-7 w-auto object-contain shrink-0">
+                        <img src="images/Logo-3.png" alt="Logo" class="h-8 w-auto object-contain shrink-0">
+                        <img src="images/Logo-4.png" alt="Logo" class="h-7 w-auto object-contain shrink-0">
+                        <img src="images/Logo-5.png" alt="Logo" class="h-6 w-auto object-contain shrink-0">
+                        <a href="#"
+                            class="text-[#4CAF50] text-[16px] font-semibold whitespace-nowrap hover:text-green-700 ml-2">
+                            Meet all customers &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marketing/Blog Section -->
+        <section class="py-16 md:py-20 bg-white text-center">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-semibold text-brand-darkgrey mb-4">Caring is the new marketing</h2>
+                <p class="text-brand-grey mb-12 max-w-2xl mx-auto">
+                    The Nexcent blog is the best place to read about the latest membership insights, trends and more.
+                    See who's joining the community, read about how our community are increasing their membership income
+                    and lot's more.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="relative pb-16">
+                        <img src="images/image 18.png" alt="Blog Image"
+                            class="w-full h-64 object-cover rounded-lg shadow-sm">
+                        <div
+                            class="absolute -bottom-0 left-1/2 transform -translate-x-1/2 w-11/12 bg-white p-6 rounded-lg shadow-md text-center">
+                            <h4 class="text-lg font-semibold text-brand-darkgrey mb-4 leading-tight">Creating
+                                Streamlined Safeguarding Processes with OneRen</h4>
+                            <a href="#"
+                                class="text-brand-green font-semibold flex items-center justify-center gap-2 hover:text-green-700">Readmore
+                                &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="relative pb-16">
+                        <img src="images/image 19.png" alt="Blog Image"
+                            class="w-full h-64 object-cover rounded-lg shadow-sm">
+                        <div
+                            class="absolute -bottom-0 left-1/2 transform -translate-x-1/2 w-11/12 bg-white p-6 rounded-lg shadow-md text-center">
+                            <h4 class="text-lg font-semibold text-brand-darkgrey mb-4 leading-tight">What are your
+                                safeguarding responsibilities and how can you manage them?</h4>
+                            <a href="#"
+                                class="text-brand-green font-semibold flex items-center justify-center gap-2 hover:text-green-700">Readmore
+                                &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="relative pb-16">
+                        <img src="images/image 20.png" alt="Blog Image"
+                            class="w-full h-64 object-cover rounded-lg shadow-sm">
+                        <div
+                            class="absolute -bottom-0 left-1/2 transform -translate-x-1/2 w-11/12 bg-white p-6 rounded-lg shadow-md text-center">
+                            <h4 class="text-lg font-semibold text-brand-darkgrey mb-4 leading-tight">Revamping the
+                                Membership Model with Triathlon Australia</h4>
+                            <a href="#"
+                                class="text-brand-green font-semibold flex items-center justify-center gap-2 hover:text-green-700">Readmore
+                                &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pre-Footer CTA -->
+        <section class="py-20 bg-brand-silver text-center border-t border-gray-200">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <h2 class="text-4xl md:text-5xl font-bold text-black mb-8 leading-tight">
+                    Pellentesque suscipit<br>fringilla libero eu.
+                </h2>
+                <a href="#"
+                    class="inline-block bg-brand-green text-white px-8 py-3.5 rounded font-medium hover:bg-green-600 transition-colors">
+                    Get a Demo &rarr;
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#263238] text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between gap-12 text-sm">
+            <div class="w-full md:w-1/3">
+                <img src="images/Logo_light.png" alt="Nexcent Logo" class="h-8 mb-8"
+                    onerror="this.src='images/Logo.png'">
+                <p class="text-gray-400 mb-2">Copyright &copy; 2026 Nexcent ltd.</p>
+                <p class="text-gray-400 mb-8">All rights reserved</p>
+                <div class="flex items-center gap-4">
+                    <!-- Social Icons Placeholder -->
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center hover:bg-brand-green transition-colors text-white">IG</a>
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center hover:bg-brand-green transition-colors text-white">TW</a>
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center hover:bg-brand-green transition-colors text-white">YT</a>
+                </div>
+            </div>
+
+            <div class="w-full md:w-2/3 flex flex-wrap justify-between gap-8 md:gap-4">
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Company</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">About us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Support</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Help center</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Terms of service</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Legal</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Privacy policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Status</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Stay up to date</h4>
+                    <form class="relative">
+                        <input type="email" placeholder="Your email address"
+                            class="bg-gray-700 text-white rounded px-4 py-2 w-full focus:outline-none focus:ring-1 focus:ring-brand-green placeholder-gray-400 text-sm">
+                        <button type="submit"
+                            class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
